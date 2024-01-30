@@ -1,0 +1,30 @@
+{
+  "name": "react-quickly-2nd",
+  "version": "1.0.0",
+  "description": "This is the main repository for all the source code included in the book _React Quickly, Second Edition_, published by [Manning Publications](//manning.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "build.dev": "webpack build --config ./webpack.dev.js",
+    "build": "webpack build --config ./webpack.prod.js",
+    "build.watch": "webpack build --watch --config ./webpack.dev.js",
+    "start.dev": "webpack-dev-server --config ./webpack.dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.0",
+    "rimraf": "^5.0.5",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
