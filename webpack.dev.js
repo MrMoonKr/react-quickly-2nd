@@ -83,11 +83,15 @@ module.exports = async () => {
         },
 
         devServer: {
+
+            hot: true,
+
+            port: 8090,
+
+            //contentBase: path.join( __dirname, 'dist' ), <- deprecated to static
             static: {
                 directory: path.join( __dirname, 'dist' )
-            },
-            hot: true,
-            port: 8090
+            }
         }
 
     }
