@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 
-const element = React.createElement( "h1", null, "Hello world!!!" );
+ReactDOM
+    .createRoot( document.getElementById( 'root' ) )
+    .render( React.createElement( "h1", null, "Hello World. 안녕하세요" ) );
 
-const container = document.getElementById( 'root' );
-
-ReactDOM.render( element, container );
+// 한줄로 작성
 
