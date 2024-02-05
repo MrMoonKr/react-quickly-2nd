@@ -11,6 +11,7 @@ const CHAPTER_LIST = [
     'ch01' ,
     'ch02' ,
     'ch03' ,
+    'ch04' ,
     //'ch07' ,
 ] ;
 const HTML_TEMPLATE = './src/template.html' ;
@@ -66,6 +67,13 @@ module.exports = async () => {
                             presets: [ '@babel/preset-env', '@babel/preset-react' ]
                         }
                     }
+                },
+                {
+                    test: /\.css$/,
+                    use: [
+                        'style-loader',
+                        'css-loader'
+                    ]
                 }
             ]
         },

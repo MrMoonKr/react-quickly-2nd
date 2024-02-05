@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    border-bottom: 2px solid rgb(5, 176, 105);
+    width: 100vw;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 140%;
+}
