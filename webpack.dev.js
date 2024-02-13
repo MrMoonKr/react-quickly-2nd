@@ -83,15 +83,15 @@ module.exports = async () => {
         plugins: [
             new CleanWebpackPlugin() ,
 
-            // new CopyPlugin( {
-            //     patterns: [
-            //         { 
-            //             from: 'public',
-            //             //to: '',
-            //             filter: ( source ) => !source.includes( 'index.html' ) && !source.includes( 'email.html' )
-            //         }
-            //     ]
-            // } ),
+            new CopyPlugin( {
+                patterns: [
+                    { 
+                        from: 'public',
+                        //to: '',
+                        filter: ( source ) => !source.includes( 'index.html' )
+                    }
+                ]
+            } ),
 
             // new HtmlWebpackPlugin( {
             //     template: './src/template.html'
