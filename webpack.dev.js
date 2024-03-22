@@ -14,7 +14,8 @@ const CHAPTER_LIST = [
     'ch04' ,
     'ch05' ,
     'ch06' ,
-    //'ch07' ,
+    'ch07' ,
+    'ch08' ,
 ] ;
 const HTML_TEMPLATE = './src/template.html' ;
 
