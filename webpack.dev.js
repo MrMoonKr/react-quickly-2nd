@@ -16,6 +16,11 @@ const CHAPTER_LIST = [
     'ch06' ,
     'ch07' ,
     'ch08' ,
+    //'ch09' ,
+    //'ch10' ,
+    'ch11' ,
+    //'ch12' ,
+    //'ch13' ,
 ] ;
 const HTML_TEMPLATE = './src/template.html' ;
 
@@ -54,8 +59,8 @@ module.exports = async () => {
             }
         },
 
-        //devtool: 'source-map' ,
-        devtool: 'inline-cheap-module-source-map',
+        devtool: 'source-map' ,
+        //devtool: 'inline-cheap-module-source-map',
 
         //watch: true,
 
